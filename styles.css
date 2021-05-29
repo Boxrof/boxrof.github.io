@@ -1,0 +1,150 @@
+body{
+	background-color: silver;
+	color: black;
+}
+
+a{
+	color: blue;
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.DLAgrid{
+	display: table;
+	margin: 0 auto;
+	background-color: silver;
+}
+
+.DLAgrid:hover{
+  -ms-transform: scale(3); /* IE 9 */
+  -webkit-transform: scale(3); /* Safari 3-8 */
+  transform: scale(3); 
+}
+
+.simulator{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width: 75%;
+}
+
+/* BUTTON STYLES */
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.0s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid green;
+}
+
+.button1:hover {
+  background-color: green;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid darkgrey;
+}
+
+.button2:hover {
+  background-color: darkgrey;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid red;
+}
+
+.button3:hover {
+  background-color: red;
+  color: white;
+}
+
+/*SLIDER FOR VARIABLES*/
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.flushRight{
+	margin-right:0;
+	margin-left: auto;
+	float: right;
+}
+
+.flushLeft{
+	margin-right:auto;
+	margin-left: 0;
+	float: left;
+}
+
+.smackCenter{
+	top: 50%;
+	left: 50%;
+	/*transform: translate(-50%,-50%);*/
+}
+
+.buttons{
+	margin: auto;
+	width: 20%;
+}
+
+.row { display: flex; font-size: 9.5px; text-align: center; color: red }
+.cell { width: 3px; height: 3px; border: 1px solid white;}
+.filledcell { width: 3px; height: 3px; border: 1px solid white; background-color: blue;}
+.startercell { width: 5px; height: 5px; border: 1px solid white; background-color: darkorange;}

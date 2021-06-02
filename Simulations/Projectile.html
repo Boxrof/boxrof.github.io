@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<title>Projectile Motion of a Cannonball</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src='https://cdn.plot.ly/plotly-1.58.4.min.js'></script>
+</head>
+<header>
+	<a href="../projects.html">Return to Projects Window </a>
+</header>
+<body onload="javascript: init()">
+	<h1 align="center">PROJECTILE MOTION</h1>
+	<img src="../media/cannon.gif" alt="CANNON" class="center"><br>
+	<hr>
+	<p style="text-align: center;">The Following Simulator calculates the trajectory of a spherical lead cannonball launched with parameters of your choosing</p>
+	<div class="simulator">
+		<img class="flushRight" src="../media/cannonarray.gif">
+		<img style="transform: scaleX(-1);" class="flushLeft" src="../media/cannonarray.gif">
+		<form id="input" method="get">
+			Enter the values below:<br>
+			Mass:<br>
+			<input type="text" name="m" id="m" value=""><br><br>
+			Elevation: <br>
+			<input type="text" name="z" id="z" value=""><br><br>
+			Theta: <br>
+			<input type="text" name="theta" id="theta" value=""><br><br>
+			Muzzle Velocity: <br>
+			<input type="text" name="muzzleV" id="muzzleV" value=""><br><br>
+		</form>
+		<div>
+			<button onclick="javascript: begin()">Shoot</button>
+			<button onclick="javascript: remove()">Remove Most Recent Firing</button>
+		</div>
+		<div id=graph>
+		</div>
+	</div>
+</body>
+<script src="./Projectile.js"></script>

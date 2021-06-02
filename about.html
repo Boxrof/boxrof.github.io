@@ -1,44 +1,56 @@
 <!DOCTYPE HTML>
 <html>
 <head><!Content created by Mohit Srivastav.>
-<style>
-.barlist {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-.bar {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.bar a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="mainstyles.css">
 </head>
+<header>
+  <div class="linkList">
+    <ul class = "barlist">
+    <li class = "bar"><a href=./index.html>Home</a></li>
+    <li class = "bar"><a href=./links.html>Favorite Links</a></li>
+    <li class = "bar"><a href=./projects.html>Personal Projects</a></li>
+    <li class = "bar"><a class="active">About Me</a></li>
+    <li class = "bar"><a href=https://github.com/Boxrof/boxrof.github.io>The Code For This Site</a></li>
+    <li class = "bar"><a href="./files/resume.pdf" width="100%" height="850px" target="_blank">Resume</a></li>
+    </ul>
+  </div>
+</header>
 <body>
-<ul class = "barlist">
-	<li class = "bar"><a href=./>Home</a></li>
-	<li class = "bar"><a href=./links>Favorite Links</a></li>
-	<li class = "bar"><a href=./projects>Personal Projects</a></li>
-	<li class = "bar"><a class="active">About Me</a></li>
-	<li class = "bar"><a href=https://github.com/Boxrof/boxrof.github.io>The Code For This Site</a></li>
-	<li class = "bar"><a href=resume.pdf>Resume</a></li>
-</ul>
+<div class="heading">
+  <h3>
+    <p>Hey! My name is Mohit Srivastav. I'm an undergraduate student at the <a href="https://www.virginia.edu/"> <span style="background-color: orange; color: white;">University o</span><span style="background-color: blue; color: white;">f Virginia</span></a> in the Class of 2022.</p>
+    <p>I am a <a href="http://www.phys.virginia.edu/"> Physics </a> and <a href="https://engineering.virginia.edu/departments/computer-science"> Computer Science Major </a> - pursuing a BS and a BA - respectively.</p>
+  </h3>
+</div>
+<div class="subheading">
+  <h2><span class="floatLeft">One of the things I enjoy is playing videogames such as these</span>
+  <span class="floatRight"> I also participate in a number of sports and extracurricular activities</span></h2>
+</div>
+<div id="game">
+  <img class="gameImage" src="./media/civ.png">
+  <img class="gameImage" src="./media/hades.jpg">
+  <img class="gameImage" src="./media/eu4.jpg">
+  <img class="gameImage" src="./media/csgo.jpg">
+  <img class="gameImage" src="./media/cities.jpg">
+</div>
+<div id="irl">
+  <div>
+    <img class="irlImage" src="./media/iro.jpg">
+    <span style="background-color: black; color: white;">Working with the International Relations Organization at UVA</span>
+  </div>
+  <div>
+    <img class="irlImage" src="./media/tkd.jpg">
+    <span style="background-color: black; color: white;">Practicing with Club Taekwondo at UVA</span>
+  </div>
+  <div>
+    <img class="irlImage" src="./media/research.png">
+    <span style="background-color: black; color: white;">Doing Research with the Mu2e Collaboration</span>
+  </div>
+  <div>
+    <img class="irlImage" src="./media/hike.jpg">
+    <span style="background-color: black; color: white;">Hiking</span>
+  </div>
+</div>
+
 </body>
 </html>

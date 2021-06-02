@@ -1,47 +1,36 @@
 <!DOCTYPE HTML>
 <html>
 <head><!Content created by Mohit Srivastav.>
-<style>
-.barlist {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-.bar {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.bar a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="mainstyles.css">
 </head>
+<header>
+  <div class="linkList">
+    <ul class = "barlist">
+    <li class = "bar"><a href=./index.html>Home</a></li>
+    <li class = "bar"><a href=./links.html>Favorite Links</a></li>
+    <li class = "bar"><a class="active">Personal Projects</a></li>
+    <li class = "bar"><a href=./about.html>About Me</a></li>
+    <li class = "bar"><a href=https://github.com/Boxrof/boxrof.github.io>The Code For This Site</a></li>
+    <li class = "bar"><a href="./files/resume.pdf" width="100%" height="850px" target="_blank">Resume</a></li>
+    </ul>
+  </div>
+</header>
 <body>
-<ul class = "barlist">
-	<li class = "bar"><a href=./>Home</a></li>
-	<li class = "bar"><a href=./links>Favorite Links</a></li>
-	<li class = "bar"><a class="active">Personal Projects</a></li>
-	<li class = "bar"><a href=./about>About Me</a></li>
-	<li class = "bar"><a href=https://github.com/Boxrof/boxrof.github.io>The Code For This Site</a></li>
-	<li class = "bar"><a href=resume.pdf>Resume</a></li>
-</ul>
-A list of links to personal projects
-<br>
-<a href=./Simulations/DLA> Dendritic Tree Simulation </a>
+  <div style="font: small-caps bold 24px/1 sans-serif; margin-top: 20px;">
+    <table id="projects">
+      <tr>
+        <th style="background-color: black;"><span style="color: white;">Project Link</span></th>
+        <th style="background-color: black;"><span style="color: white;">Description</span></th>
+      </tr>
+      <tr>
+        <th style="background-color: turquoise;"><a href="./Simulations/DLA.html"> Dendritic Tree Simulation </a></th>
+        <th style="background-color: turquoise;">A simulation for Diffusion Limited Aggregation using a 2-D grid</th>
+      </tr>
+      <tr>
+        <th style="background-color: turquoise;"><a href="./Simulations/Projectile.html"> Cannonball Firing </a></th>
+        <th style="background-color: turquoise;">A trajectory calculation for a simulated lead cannonball with drag</th>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>

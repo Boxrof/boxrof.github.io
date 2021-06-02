@@ -1,0 +1,143 @@
+.barlist {
+  list-style-type: none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 40%;
+  padding: 1;
+  overflow: hidden;
+  background-color: silver;
+}
+
+.linkList{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: black;
+  width: 100%;
+}
+
+.bar {
+  float: left;
+}
+
+div{
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.bar a:hover:not(.active) {
+  box-shadow: 
+    inset -2px -2px green,
+    inset 2px 2px green;
+}
+
+.active {
+  background-color: blue;
+}
+
+body{
+  background-color: silver;
+  color: black;
+}
+
+.heading{
+  border: 5px dashed yellow;
+  box-shadow: inset 0 0 20px red;
+  text-align: center;
+  margin-top: 20px;
+  background-color: lightsteelblue;
+  font: small-caps bold 24px/1 sans-serif;
+}
+
+.subheading{
+  border: 3px ridge;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: serif;
+}
+
+.floatRight{
+  margin-right:0;
+  margin-left: auto;
+  float: right;
+}
+
+.floatLeft{
+  margin-right:auto;
+  margin-left: 0;
+  float: left;
+}
+
+#game{
+  background-image: url("./media/steam.png");
+  background-color: mediumaquamarine;
+  background-size: 50%;
+  width: 50%;
+  float: left;
+  border-style: solid none solid solid;
+  border-width: 3px;
+  margin-left: 0;
+  height: 200vh;
+}
+
+#irl{
+  background-image: url("./media/phys.png");
+  background-size: 50%;
+  background-color: mediumaquamarine;
+  width: 49.65%;
+  float: right;
+  border-style: solid solid solid none;
+  border-width: 3px;
+  margin-right: 0;
+  text-align: center;
+  height: 200vh;
+}
+
+.circleButton{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: turquoise;
+  border: 1 px solid turquoise;
+}
+
+.circleButton:hover{
+  opacity: 50%;
+  background-color: paleturquoise;
+}
+
+.gameImage{
+  width: 75%;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.irlImage{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 75%;
+  max-height: 50vh;
+  width: auto;
+  height: auto;
+}
+
+
+table, th, td{
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+  border: 2px solid black;
+  border-collapse: collapse;
+}

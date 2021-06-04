@@ -12,7 +12,7 @@ function init() {
 	if (graphed) {
 		return;
 	} else{
-		Plotly.newPlot('graph',[{x:[],y:[]}],layout);
+		Plotly.newPlot('graph',[],layout);
 	}
 	return;
 }
@@ -141,4 +141,8 @@ function begin() {
 
 function remove() {
 	Plotly.deleteTraces('graph', [-1]);
+}
+
+function removeFirst() {
+	Plotly.deleteTraces('graph', [0]);
 }
